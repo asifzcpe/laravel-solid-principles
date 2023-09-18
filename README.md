@@ -2,18 +2,15 @@
 
 ## Overview
 
-This Laravel project demonstrates the application of the Liskov Substitution Principle (LSP) in the context of payment gateways. LSP is one of the SOLID principles of object-oriented programming and focuses on substitutability of derived classes for their base classes without affecting the program's correctness.
-
-In this project, we explore how to implement various payment gateways while adhering to the Liskov Substitution Principle.
+The "Laravel SOLID Principles" project is a resource and guide aimed at helping developers understand and apply SOLID principles in Laravel applications. SOLID is an acronym that stands for five design principles intended to make software more understandable, flexible, and maintainable. In this context, Laravel, a popular PHP web application framework, serves as the platform for demonstrating and implementing these principles effectively.
 
 ## Table of Contents
 
-1. Single Responsibility Principle(coming soon)
-2. Open Closed Principle(coming soon)
+1. Single Responsibility Principle(Coming soon)
+2. Open Closed Principle(Coming soon)
 3. [Liskov Substitution Principle](https://dev.to/asifzcpe/empowering-your-laravel-application-mastering-payment-gateways-with-the-liskov-substitution-principle-30pg)
-4. [Usage](#usage)
-5. [Contributing](#contributing)
-6. [License](#license)
+4. Interface Segregation Principle(Coming soon)
+5. Dependency Inversion Principle(Coming soon)
 
 ## Getting Started
 
