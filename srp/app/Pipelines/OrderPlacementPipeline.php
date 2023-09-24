@@ -33,6 +33,7 @@ class OrderPlacementPipeline
         $data = [];
 
         foreach ($this->pipes as $pipe) {
+            // new PaymentAction()->execute()
             $result = app($pipe)->execute($data, $request);
 
             // Store the result in the data array

@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Components\PaymentGateways\CreditCardPaymentGateway;
 use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Http\Request;
@@ -47,10 +48,14 @@ class RouteServiceProvider extends ServiceProvider
 
             // Create the fully qualified class name based on the route parameter.
             $className = $namespace . Str::studly($gateway) . 'PaymentGateway';
+            // App\Components\POaymentGateways\CreditCardPaymentGateway
+            //CreditCard
+            //new CreditCardPaymentGateway();
 
             // Check if the class exists.
             if (class_exists($className)) {
                 // Instantiate the class dynamically.
+                //new App\Components\POaymentGateways\CreditCardPaymentGateway()
                 return app()->make($className);
             }
             // Handle the case when the provided $gateway parameter does not correspond to a valid class.

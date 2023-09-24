@@ -25,9 +25,9 @@ class OrderController extends Controller
         // Execute the order placement pipeline, passing the request and initial data
         $processedData = $this->orderPlacementPipeline->execute($data, $request);
         dd($processedData);
-        if ($processedData['paymentStatus'] !== 'success') {
-            return redirect()->back()->with('error', 'Payment failed');
-        }
+        // if ($processedData['paymentStatus'] !== 'success') {
+        //     return redirect()->back()->with('error', 'Payment failed');
+        // }
 
         echo "Order Placement";
 

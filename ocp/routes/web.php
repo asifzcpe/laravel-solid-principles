@@ -1,9 +1,7 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
-
-use App\Http\Controllers\CheckoutController;
-
 
 /*
 |--------------------------------------------------------------------------
@@ -19,5 +17,5 @@ use App\Http\Controllers\CheckoutController;
 Route::get('/', function () {
     return view('welcome');
 });
-//credit-card
-Route::get('/checkout/{gateway}', [CheckoutController::class, 'processPayment']);
+
+Route::get('/login', [AuthController::class, 'login']);
